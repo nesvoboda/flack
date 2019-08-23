@@ -1,4 +1,4 @@
-# Project 2
+# Flack (CS50W Project 2)
 
 http://nesvo-flack.herokuapp.com
 
