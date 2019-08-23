@@ -1,0 +1,82 @@
+  #dark-background-b {
+      min-height: 10vh;
+      background-color: #0c0032;
+      margin-top: 20vh;
+  }
+  #sendarea {
+    min-height: 10vh;
+    background-color: #190061;
+    overflow-y: scroll;
+  }
+  #msg {
+    margin-top: 15vh;
+  }
+  #message_text,
+  #message_submit {
+
+      border: none;
+      background: none;
+      color: white;
+  }
+
+  #message_submit {
+      height: 3.5em;
+      transition: all 0.4s ease;
+  }
+  #message_submit:hover {
+      background-color: #3500D3;
+  }
+  #message_text {
+      height: 2em;
+
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1.5em;
+      box-shadow: none;
+      outline: none;
+      border-bottom: 1px solid white;
+      transition: all 0.4s ease;
+  }
+
+  #message_text:hover,
+  #message_text:focus {
+      border-bottom: 2px solid white;\
+      background: #1B006B;
+
+  }
+  #messages_zone {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    padding-bottom: 15vh;
+  }
+  #message_from {
+    font-weight: 700;
+    margin-right: 1em;
+  }
+  #message_date {
+    font-weight: 300;
+  }
+  #message_contents{
+    text-align: left;
+  }
+  #a_message {
+    font-size: 1.2em;
+    height: 2.5em;
+  }
+  #a_message:hover{
+    background-color: #0E003D;
+    outline: none
+  }
+   #back-link {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10em;
+    padding: 0.6em;
+    transition: all 0.4s ease;
+  }
+    #back-link:hover {
+      background: #240090;
+    }

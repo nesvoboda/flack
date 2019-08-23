@@ -1,0 +1,33 @@
+{% extends "maintemplate.html" %}
+{% block head %}
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+<script type="text/javascript" src="{{url_for('static', filename='channel.js')}}"> </script>
+<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='channel.css')}}">
+{% endblock %}
+{% block body %}
+<div class="row fixed-top" id="dark-background-b">
+    <!-- <div class="col-12 offset-1 mt-4 align-self-center"> -->
+    <h1 class="col-7 offset-1 mt-4 mb-4 align-self-center"> Channel: {{channel_name}} </h1>
+    <a href="/success" class="col-auto mt-4 mb-4 align-self-center" id="back-link"> Back to channels </a>
+<!-- </div> -->
+</div>
+<div class="row" id="msg">
+    <div class="col offset-1 mt-4">
+        <div id="messages_zone"></div>
+    </div>
+</div>
+<div class="row">
+</div>
+<div class="row fixed-bottom" id="sendarea">
+    <div class="col-12 offset-1 mt-4 mb-5 align-self-center">
+        <form action="/send_message2" method="post" id="message_form">
+            <input type="text" name="message" class="col-7" id="message_text">
+            <input type="submit" class="col-auto" value="Submit message" id="message_submit" disabled="true">
+        </form>
+    </div>
+</div>
+<p id="result"></p>
+<!-- <ul id="messages_area">
+  <li> probnik </li>
+</ul> -->
+{% endblock %}

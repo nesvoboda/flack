@@ -1,0 +1,185 @@
+  html,
+  body {
+      /*height: 100vh;*/
+      background-color: #190061 !important;
+  }
+  
+  @media (max-width: 768px) {
+      h1 {
+          font-size: 1.5em;
+      }
+      #flack-logo {
+          margin-left: 8.5%;
+      }
+      #blue-background {
+          height: calc(var(--vh, 1vh) * 15) !important;
+          /*height: 15vh !important;*/
+      }
+      #spacer {
+          height: 10vh !important;
+      }
+      #dark-background-0 {
+          height: 10vh !important;
+      }
+      #dark-background-1 {
+          height: 9vh !important;
+      }
+      #signed-div {
+          display: none !important;
+      }
+      #signed-div-2 {
+          display: flex !important;
+          font-size: 1.5em;
+          height: 4em;
+          background-color: #240090;
+      }
+      #username-bar {
+          flex: 0 0 85%;
+          max-width: 85%;
+      }
+      #signed-in,
+      #signed-in-2 {
+          margin-top: 0em !important;
+      }
+      #display_name {
+          font-size: 1em !important;
+          margin-top: .5rem!important;
+      }
+      #purplestrip {
+          height: 20vh !important;
+      }
+      #downside {
+          height: 16vh !important;
+      }
+      h6 {
+          color: #bbc0c5 !important;
+      }
+  }
+  
+  #signed-div-2 {
+      display: none;
+  }
+  
+  h1 {
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 400;
+      color: white;
+      /*font-size: 1.5em;*/
+  }
+  
+  #select_div {
+      margin-left: 12%;
+  }
+  
+  h4,
+  h6 {
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;
+      color: white;
+  }
+  
+  h6 {
+      font-size: .8em;
+      text-align: center;
+  }
+  
+  #blue-background {
+      height: 20vh;
+      background-color: #3500D3;
+      color: white;
+  }
+  
+  #dots {
+      margin-bottom: .75em;
+  }
+  
+  #description {
+      margin-top: .75em;
+  }
+  
+  p,
+  input {
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;
+  }
+  
+  #dark-background-0 {
+      height: 7vh;
+      background-color: #0c0032;
+  }
+  
+  #dark-background-1 {
+      height: 15vh;
+      background-color: #0c0032;
+  }
+  
+  #dark-background-2 {
+      height: 18vh;
+      background-color: #0c0032;
+  }
+  
+  #selectusername {
+      margin-left: -1em;
+  }
+  
+  #signed-in,
+  #signed-in-2 {
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 400;
+      height: 2em;
+      margin-top: 1.75em;
+      color: white;
+      background: none;
+      border: none;
+  }
+  
+  #signed-div {
+      height: 5em;
+      transition: all 0.3s ease;
+  }
+  
+  #signed-div:hover {
+      background: #240090;
+  }
+  
+  #display_name {
+      color: white;
+      height: 3em;
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 700;
+      font-size: 2em;
+      border-bottom: 1px solid white;
+      box-shadow: none;
+      transition: background 0.3s ease;
+      transition: border-bottom 0.3s ease;
+  }
+  
+  #display_name:focus,
+  #display_name:hover {
+      outline: none;
+      border-bottom: 3px solid white;
+      background: #0E003D;
+  }
+  
+  #display_name::placeholder {
+      font-weight: 300;
+  }
+  
+  #downside {
+      height: 15vh;
+      background-color: #190061;
+  }
+  
+  #spacer {
+      height: 15vh;
+  }
+  
+  #purplestrip {
+      background-color: #190061;
+      height: 30vh;
+  }

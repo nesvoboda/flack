@@ -1,0 +1,76 @@
+  #dark-background-a {
+
+      background-color: #0c0032;
+  }
+
+  #dark-background-b {
+      min-height: 10vh;
+      background-color: #0c0032;
+  }
+
+  #dark-background-c {
+      min-height: 10vh;
+      background-color: #0c0032;
+  }
+
+  #channel_name_input,
+  #channel_name_submit {
+
+      border: none;
+      background: none;
+      color: white;
+      transition: all 0.4s ease;
+  }
+
+  #channel_name_submit {
+      height: 3.5em;
+  }
+
+  #channel_name_input {
+      height: 2em;
+
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1.5em;
+      outline: none;
+      box-shadow: none;
+      border-bottom: 1px solid white;
+  }
+
+  #channel_name_input:hover,
+  #channel_name_input:focus {
+      /*border-bottom: 2px solid white;*/
+      background-color: #0E003D;
+
+  }
+
+  #channel_name_submit:hover {
+      background-color: #3500D3;
+  }
+  #joinchannel {
+    
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: white;
+
+
+  }
+  #joinchannel:hover {
+    color: white;
+    background-color: #3500D3;
+  }
+  #joinchannel_div{
+    background-color: #240090;
+  }
+  #joinchannel_div:hover {
+    background-color: #3500D3;
+  }
+  #logout {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10em;
+    padding: 0.5em;
+  }

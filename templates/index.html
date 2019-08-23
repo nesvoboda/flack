@@ -1,0 +1,33 @@
+{% extends "maintemplate.html" %} {% block head %}
+<script type="text/javascript" src="{{url_for('static', filename='index.js')}}">
+</script>
+{% endblock %} {% block description %} a minimalistic chatroom built with js and ajax on flask {% endblock %} {% block body %}
+<div class="row" id="dark-background-0"></div>
+<div class="row justify-content-end" id="dark-background-1">
+    <div class="col offset-1" id="select_div">
+        <h1 id="selectusername">Select your username </h1>
+    </div>
+    <div class="col-auto">
+    </div>
+</div>
+<form id="form">
+    <div class="row justify-content-center" id="dark-background-2">
+        <div class="col-8 align-self-top" id="username-bar">
+            <input type="search" class="form-control" id="display_name" placeholder="Type in your username">
+        </div>
+        <div class="col-auto align-self-top mt-2" id="signed-div">
+            <button type="submit" id="signed-in" disabled="true">Submit</button>
+        </div>
+    </div>
+</form>
+<div class="row justify-content-center" id="purplestrip">
+    <div class="col-10 justify-content-center align-self-top mt-4" id="signed-div-2">
+        <button type="submit" id="signed-in-2" disabled="true" class="align-self-center">Submit</button>
+    </div>
+</div>
+<div class="row justify-content-center" id="downside">
+    <div class="align-self-center col-11">
+        <h6> Made in 2018 by Arseny Shishaev for CS50 Web Programming with Python and Javascript</h6>
+    </div>
+</div>
+{% endblock %}

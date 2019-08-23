@@ -1,0 +1,39 @@
+{% extends "maintemplate.html" %}
+{% block head %}
+
+{% block top %}
+<div class="col offset-xs-2 offset-sm-3 offset-lg-5 align-self-center mb-2">
+<a href="/" id="logout" class="ml-5" onclick="logout()"> Log out </a>
+</div>
+{% endblock %}
+
+<script type="text/javascript" src="{{url_for('static', filename='success.js')}}"> </script>
+<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='success.css')}}">
+{% endblock %}
+{% block body %}
+<div class="row" id="dark-background-b">
+    <h1 class="col offset-1 mt-4"> Create a channel </h1>
+</div>
+<div class="row" id="dark-background-c">
+    <div class="col offset-1 mt-2 mb-5">
+        <form action="/create_channel" method="POST" id="channel_name_form">
+            <input type="text" name="channel_name" class="col-8" id="channel_name_input">
+            <input type="submit" id="channel_name_submit" class="col-auto" disabled="true" value="Submit">
+        </form>
+    </div>
+</div>
+
+<div class="row" id="downside-a">
+  <h1 class="col offset-1 mt-4"> Join a channel </h1>
+    <p id="result"></p>
+</div>
+
+{% for item in channels %}
+<div class="row">
+<div class="col-8 offset-1 mt-3" id="joinchannel_div">
+<a href="/channel/{{item}}" id="joinchannel" onclick="setStorage(this)">{{item}}</a> <br>
+</div>
+</div>
+{% endfor %}
+
+{% endblock %}
